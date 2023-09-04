@@ -1,91 +1,112 @@
-.body{
-    background: #323cca;
-   }
-   
-   .container{
-       background: #aeaeae;
-       max-width: 400px;
-       margin: auto;
-       padding: 10px 20px;
-   }
-   
-   .header{
-       border-bottom: 1px solid rgb(8, 8, 7);
-   }
-   
-   .titulo{
-       text-align: center;
-   }
-   
-   .boton-agregar{
-       display: block;
-       margin:auto ;
-       margin-top: -15px;
-       padding: 4px 10px;
-       font-weight: bold;
-       border: 3px solid #070707;
-   }
-   
-   .boton-agregar:hover{
-     background: #e71f37;
-   }
-   
-   .lista-tareas{
-       list-style: none;
-       padding: 0;
-   }
-   
-   .lista-tareas li{
-       margin: 10px 0px;
-       color: rgb(23, 155, 155);
-       padding: 10px;
-       display: flex;
-       justify-content: space-between;
-   }
-   
-   .lista-tareas li:hover {
-       background: #963867;
-   }
-   
-   .boton-eliminar{
-       background: #080808;
-       color: #f5f1f1;
-       font-weight: bold;
-       border: none;
-   }
-   
-   .boton-eliminar:hover{
-       background: #971020;
-   }
-   
-   .input-tarea{
-       border: none;
-       background: #f7f3f3;
-       padding: 4px;
-       width: 100%;
-       outline: none;
-       text-transform: capitalize;
-       font-size: 16px;
-       
-   }
-   
-   .input-tarea:focus{
-       background: #5d4378;
-   }
-   
-   .boton-limpiar{
-       display: block;
-       margin: auto;
-       margin-right: 0;
-       padding: 4px 10px;
-       font-weight: bold;
-       outline: none;
-       color: #f5f1f1;
-       border: 2px solid #6b1010;
-       background: #94575e;
-   }
-   
-   .boton-limpiar:hover{
-       color: #f5f1f1;
-       background: #100f0f;
-   }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tabla{
+    width: 33%;
+    height: 550px;
+    margin: auto;
+    border: 1px solid #090909;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px #090909;
+    padding: 60px;
+    text-align: center;
+    flex-grow: 1;
+    color: rgb(42, 41, 41);
+}
+
+.tabla h2 {
+    
+  display: block;
+  font-size: 30px;
+  margin-bottom: 35px;
+    
+}
+
+.tabla img {
+    width: 64px;
+    margin-bottom: 35px;
+}
+
+.tabla h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.yabla p {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.boton {
+    display: inline-block;
+    width: 150px;
+    padding: 12px;
+    background: #d9e84f;
+    text-decoration: none;
+    color: #9c8282;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+}
+
+.tabla:hover {
+    background: #e82f2f;
+    color: aliceblue;
+    transition: 1 all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .tabla {
+        width: 45px;
+        max-width: none;
+        margin-bottom: 40px;
+        justify-content: space-between;
+        flex-grow: initial;
+        flex-direction: column;
+    }  
+}
+
+@media screen and (max-width: 700px) {
+    
+    .tabla {
+        width: 45px;
+       padding: 30px;
+    }
+
+     .tabla> h2 {
+        margin-top: 40px;
+     }
+}
+
+@media screen and (max-width: 550px) {
+    
+    .tabla {
+        width: 85%;
+        padding: 20px;
+    
+    } 
+}
